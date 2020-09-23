@@ -1,11 +1,10 @@
 import React from 'react';
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react';
 
 import { Button, ButtonProps } from './Button';
 
 export default {
-	title: 'Example/Button',
+	title: 'Core/Button',
 	component: Button,
 	argTypes: {
 		backgroundColor: { control: 'color' },
@@ -27,12 +26,12 @@ Secondary.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-	size: 'large',
+	size: 1,
 	label: 'Button',
 };
 
 export const Small = Template.bind({});
 Small.args = {
-	size: 'small',
+	size: 0,
 	label: 'Button',
 };
